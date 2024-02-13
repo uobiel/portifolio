@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes animacaoHome {
+    0%{left: -200px;}
+    100%{left: 0;}
+}
+
+@keyframes corBotao {
+    0%{background-color: #263138;}
+    100%{background-color: #263138cf;}
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    animation-name: animacaoHome;
+    animation-duration: 1s;
+}
+
+.container {
+    width: 85%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    align-items: center;
+}
+
+.nome-pessoal {
+    width: 50%;
+    font-weight: bold;
+    color: #445964;
+}
+
+.nome-pessoal p {
+    background-image: url('img/Group.svg');
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: auto 100%;
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+.menus {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menus a {
+    color: #445964;
+    text-decoration: none;
+}
+
+.menus a:hover {
+    color: #3d8bb6;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.divisor {
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+}
+
+.divisor p {
+    margin-top: 5px;
+}
+
+#arte-home {
+    background-image: url('img/Home_art.svg');
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.bold-big {
+    font-weight: bold;
+    font-size: 45px;
+    color: #445964;
+}
+
+.small-color {
+    color: #445964;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+.divisor button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #263138;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.divisor button:hover {
+    background-color: #263138cf;
+    transform: scale(1.01);
+    animation-name: corBotao;
+    animation-duration: 1s;
+}
+
+.social {
+    width: 150px;
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social:hover {
+    transform: scale(1.01);
+}
+
+.git {
+    width: 40px;
+    height: 30px;
+    background-image: url('img/Git.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+}
+
+.git:hover {
+    transform: scale(1.09);
+}
+
+.linkedin {
+    width: 40px;
+    height: 30px;
+    background-image: url('img/Linkedin.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    transform: scale(1.09);
+}
+
+.insta {
+    width: 40px;
+    height: 30px;
+    background-image: url('img/Instagram.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+}
+
+.insta:hover {
+    transform: scale(1.09);
+}
+
+@media only screen and (max-width: 600px) {
+    #textos {
+        width: 100%;
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .nome-pessoal {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nome-pessoal p {
+        font-size: 20px;
+        background-position: 20%;
+    }
+
+    .menus {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    #home {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .bold-big {
+        font-size: 40px;
+    }
+
+    #arte-home {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 220px;
+        background-position: 20%;
+    }
+
+    .acessos {
+        position: absolute;
+        bottom: 0px;
+    }
+}
