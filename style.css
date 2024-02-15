@@ -20,10 +20,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     position: absolute;
     animation-name: animacaoHome;
     animation-duration: 1s;
+    overflow: hidden;
 }
 
 .container {
@@ -179,7 +179,7 @@ header {
     transform: scale(1.09);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     #textos {
         width: 100%;
         background-position: center;
@@ -234,4 +234,76 @@ header {
         position: absolute;
         bottom: 0px;
     }
+}
+
+#about-me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.container-foto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    width: 192px;
+    height: 200px;
+    background-image: url('img/Screenshot_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    margin-bottom: 50px;
+    border-radius: 100%;
+}
+
+#my-name {
+    font-size: 30px;
+}
+
+#hard-skills {
+    margin-top: 100px;
+}
+
+.linha {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.level-skill {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-skill {
+    margin: 50px;
+}
+
+.skill1 .lvl1, .skill1 .lvl2,.skill1 .lvl3, .skill1 .lvl4, 
+.skill2 .lvl1, .skill2 .lvl2,.skill2 .lvl3, .skill2 .lvl4,
+.skill3 .lvl1, .skill3 .lvl2,.skill3 .lvl3 {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/linhaOK.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.skill1 .lvl5, .skill2 .lvl5, .skill3 .lvl4, .skill3 .lvl5 {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/linhaNOK.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.texto-sobre-mim {
+    text-align: justify;
 }
