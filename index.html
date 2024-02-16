@@ -18,7 +18,7 @@
                 <div class="menus">
                     <a href="index.html">home</a>
                     <a href="sobre/index.html">sobre</a>
-                    <a href="#">portifólio</a>
+                    <a href="portifolio/index.html">portifólio</a>
                     <a href="#">Resumo</a>
                     <a href="#">Contato</a>
                 </div>
@@ -57,6 +57,30 @@
             </main>
         </div>
     </div>
+
+    <script>
+
+        const botaoSobreMim = document.querySelector('#aboutme-button');
+        const git = document.querySelector('.git');
+        const linkedin = document.querySelector('.linkedin');
+        const insta = document.querySelector('.insta');
+
+        botaoSobreMim.addEventListener('click', function(){
+            window.location.href = 'sobre/index.html'
+        })
+
+        git.addEventListener('click', function(){
+            window.open('https://github.com/uobiel', '_blank')
+        })
+        
+        linkedin.addEventListener('click', function(){
+            window.open('https://www.linkedin.com/in/gabriel-antunes-873531208/', '_blank')
+        })
+        
+        insta.addEventListener('click', function(){
+            window.open('https://www.instagram.com/uobiel/', '_blank')
+        })
+    </script>
     
 </body>
 
