@@ -111,6 +111,7 @@ header {
     display: flex;
     position: relative;
     top: -80px;
+    margin-top: 50px;
 }
 
 .opcoes-projetos {
