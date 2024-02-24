@@ -23,7 +23,6 @@
     position: absolute;
     animation-name: animacaoHome;
     animation-duration: 1s;
-    overflow: hidden;
 }
 
 .container {
@@ -236,3 +235,236 @@ header {
     }
 }
 
+#about-me {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+
+#about-me .container-foto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#about-me .photo {
+    width: 100%;
+    height: auto;
+    background-image: url('../img/my-foto.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    margin-bottom: 50px;
+    border-radius: 20%;
+}
+
+#about-me #my-name {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #445964;
+}
+
+#about-me #hard-skills {
+    margin-top: 100px;
+}
+
+#about-me .linha {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    color: #445964;
+    font-weight: bold;
+}
+
+#about-me .level-skill {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#about-me .container-skill {
+    margin: 50px;
+}
+
+.skill1 .lvl1, .skill1 .lvl2,.skill1 .lvl3, .skill1 .lvl4, 
+.skill2 .lvl1, .skill2 .lvl2,.skill2 .lvl3, .skill2 .lvl4,
+.skill3 .lvl1, .skill3 .lvl2,.skill3 .lvl3,
+.skill4 .lvl1, .skill4 .lvl2, .skill4 .lvl3,.skill4 .lvl4,
+.skill5 .lvl1, .skill5 .lvl2, .skill5 .lvl3,.skill5 .lvl4,
+.skill6 .lvl1, .skill6 .lvl2, .skill6 .lvl3,.skill6 .lvl4 {
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/linhaOK.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.skill1 .lvl5, 
+.skill2 .lvl5, 
+.skill3 .lvl4, .skill3 .lvl5,
+.skill4 .lvl5, .skill4 .lvl4,
+.skill5 .lvl5,
+.skill6 .lvl5 {
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/linhaNOK.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+#about-me .texto-sobre-mim {
+    text-align: justify;
+}
+
+#about-me .text {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    color: #445964;
+}
+
+#about-me .hardskills {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #445964;
+}
+
+
+#about-me .nome-skill {
+    margin-bottom: 10px;
+}
+
+#portifolio .text {
+    font-weight: bold;
+    color: #263138;
+    margin-right: 50px;
+}
+
+#portifolio .big-size {
+    font-size: 50px;
+}
+
+#portifolio .text-cor {
+    color: #445964;
+    font-size: 50px;
+}
+
+#portifolio .text-projetos {
+    width: 250px;
+    color: #445964;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+#portifolio .texto-buttons {
+    position: relative;
+    top: -100px;
+    left: 90px;
+}
+
+#portifolio .container-header, #portifolio  .opcoes-projetos {
+    display: flex;
+    position: relative;
+    top: -80px;
+    margin-top: 50px;
+}
+
+#portifolio .opcoes-projetos {
+    margin-top: 20px;
+}
+
+#portifolio .opcoes-projetos button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #DFDFDF;
+    color: #445964;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#portifolio .opcoes-projetos button:hover {
+    background-color: #445964;
+    color: white;
+}
+
+#portifolio .container-cards {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    position: relative;
+    top: -100px;
+}
+
+#portifolio .linha-topo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#portifolio .linha-baixo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#portifolio .card {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#portifolio .cardM {
+    width: 300px;
+    height: 170px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#portifolio .card:hover, .cardM:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#portifolio .cabecalho-container {
+    display: flex;
+}
+
+#portifolio .dark {
+    background-color: #263138;
+    color: white;
+    font-weight: bold;
+}
+
+#portifolio .gray {
+    background-color: #445964;
+    color: white;
+    font-weight: bold;
+}
+
+#portifolio .soft {
+    background-color: #DFDFDF;
+    color: #40515a;
+    font-weight: bold;
+}

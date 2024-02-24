@@ -17,9 +17,9 @@
                     <p>Gabriel Antunes</p>
                 </div>
                 <div class="menus">
-                    <a href="index.html">home</a>
-                    <a href="sobre/index.html">sobre</a>
-                    <a href="portifolio/index.html">portifólio</a>
+                    <a href="#">home</a>
+                    <a href="#">sobre</a>
+                    <a href="#">portifólio</a>
                     <a href="#">Resumo</a>
                     <a href="#">Contato</a>
                 </div>
@@ -56,33 +56,174 @@
         
                 </section>        
             </main>
+
+            <section id="about-me">
+
+                <div class="my-foto-responsiva">
+                    
+                </div>
+    
+                <div class="texto-sobre-mim">
+    
+                    <div class="text">
+                        <p id="my-name">Gabriel Antunes</p>
+                        <p>Meu nome é Gabriel Antunes Rodrigues 👋
+                            Eu sou do Rio Grande do Sul e moro na menor cidade do Estado, chamada Esteio! Estou cursando o terceiro período em Análise e Desenvolvimento de Sistemas na Unisinos - São Leopoldo.</p>
+                    </div>
+    
+                    <div id="hard-skills">
+                        <div class="linha">
+                            <p class="hardskills">HARDSKILLS</p>
+                        </div>
+                        <div class="linha">
+    
+                            <div class="container-skill">
+                                <div class="nome-skill">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="level-skill skill1">
+                                    <div class="lvl1"></div>
+                                    <div class="lvl2"></div>
+                                    <div class="lvl3"></div>
+                                    <div class="lvl4"></div>
+                                    <div class="lvl5"></div>
+                                </div>
+                            </div>
+    
+                            <div class="container-skill">
+                                <div class="nome-skill">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="level-skill skill2">
+                                    <div class="lvl1"></div>
+                                    <div class="lvl2"></div>
+                                    <div class="lvl3"></div>
+                                    <div class="lvl4"></div>
+                                    <div class="lvl5"></div>
+                                </div>
+                            </div>
+    
+                            <div class="container-skill">
+                                <div class="nome-skill">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="level-skill skill3">
+                                    <div class="lvl1"></div>
+                                    <div class="lvl2"></div>
+                                    <div class="lvl3"></div>
+                                    <div class="lvl4"></div>
+                                    <div class="lvl5"></div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="linha">
+    
+                            <div class="container-skill">
+                                <div class="nome-skill">
+                                    <p>GIT</p>
+                                </div>
+                                <div class="level-skill skill4">
+                                    <div class="lvl1"></div>
+                                    <div class="lvl2"></div>
+                                    <div class="lvl3"></div>
+                                    <div class="lvl4"></div>
+                                    <div class="lvl5"></div>
+                                </div>
+                            </div>
+    
+                            <div class="container-skill">
+                                <div class="nome-skill">
+                                    <p>Lógica</p>
+                                </div>
+                                <div class="level-skill skill5">
+                                    <div class="lvl1"></div>
+                                    <div class="lvl2"></div>
+                                    <div class="lvl3"></div>
+                                    <div class="lvl4"></div>
+                                    <div class="lvl5"></div>
+                                </div>
+                            </div>
+    
+                            <div class="container-skill">
+                                <div class="nome-skill">
+                                    <p>Automação</p>
+                                </div>
+                                <div class="level-skill skill6">
+                                    <div class="lvl1"></div>
+                                    <div class="lvl2"></div>
+                                    <div class="lvl3"></div>
+                                    <div class="lvl4"></div>
+                                    <div class="lvl5"></div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="container-foto">
+                    <div class="photo">
+                    </div>
+                </div>
+    
+            </section>
+
+            <section id="portifolio">
+                <div class="container-header">
+                    <div class="text">
+                        <p class="big-size">Meu</p>
+                        <p class="text-cor">Portifólio</p>
+                    </div>
+                    <div class="text-projetos">
+                        <p>Estes são alguns dos trabalhos e  projetos que já realizei</p>
+                    </div>
+                </div>
+
+                <div class="opcoes-projetos">
+                    <button>Todos</button>
+                    <button>Web</button>
+                    <button>Web API</button>
+                    <button>Web DB</button>
+                </div>
+
+
+                <div class="container-cards">
+
+                    <div class="linha-topo">
+                        <div id="card1" class="cardM dark">
+                            <p>PetShop</p>
+                        </div>
+                        <div id="card2" class="card gray">
+                            <p>Barbearia</p>
+                        </div>
+                        <div id="card3" class="cardM soft">
+                            <p>Jogo da Velha</p>
+                        </div>
+                    </div>
+
+                    <div class="linha-baixo">
+                        <div id="card4" class="card soft">
+                            <p>Hamburgueria</p>
+                        </div>
+                        <div id="card5" class="cardM dark">
+                            <p>Clima</p>
+                        </div>
+                        <div id="card6" class="card gray">
+                            <p>Calculadora</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>        
         </div>
     </div>
-
-    <script>
-
-        const botaoSobreMim = document.querySelector('#aboutme-button');
-        const git = document.querySelector('.git');
-        const linkedin = document.querySelector('.linkedin');
-        const insta = document.querySelector('.insta');
-
-        botaoSobreMim.addEventListener('click', function(){
-            window.location.href = 'sobre/index.html'
-        })
-
-        git.addEventListener('click', function(){
-            window.open('https://github.com/uobiel', '_blank')
-        })
-        
-        linkedin.addEventListener('click', function(){
-            window.open('https://www.linkedin.com/in/gabriel-antunes-873531208/', '_blank')
-        })
-        
-        insta.addEventListener('click', function(){
-            window.open('https://www.instagram.com/uobiel/', '_blank')
-        })
-    </script>
     
+    <script src="script.js"></script>
 </body>
 
 </html>
