@@ -20,7 +20,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     animation-name: animacaoHome;
     animation-duration: 1s;
 }
@@ -467,4 +466,80 @@ header {
     background-color: #DFDFDF;
     color: #40515a;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #about-me .hard-skills {
+        flex-direction: column;
+    }
+
+    #about-me .linha {
+        flex-direction: column;
+    }
+
+    #about-me .photo {
+        display: none;
+    }
+
+    #about-me .container-foto {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container-cards {
+        margin-top: 150px;
+    }
+
+
+    .text-projetos {
+        margin: 0;
+    }
+
+    .container-header {
+        flex-direction: column;
+    }
+
+    .nome-pessoal {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .nome-pessoal p {
+        font-size: 20px;
+        background-position: 20%;
+    }
+
+    .menus {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .container-header, .opcoes-projetos {
+        position: static;
+    }
+
+    .linha-topo, .linha-baixo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .cardM, .card {
+        width: 30%;
+        height: 100px;
+        text-align: center;
+        margin: 5px;
+        font-size: 80%;
+    }
+
+    #home {
+        flex-direction: column;
+        margin-top: 20px;
+    }
 }
